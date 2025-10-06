@@ -23,7 +23,7 @@
 // |  TAB    |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  COLEMAK  |
 // | CT(ESC) |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |     '     |
 // | SHFT    |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(ENT) |
-//                       | GUI | ALT | BSPC|   |LWR(SPC)|RSE|MOUSE|
+//                       | GUI | ALT | BSPC|   |LWR(SPC)|RSE|     |
                         bindings = <
    &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &tog COLEMAK
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -35,12 +35,12 @@
                 colemak_layer {
                         display-name = "Colemak";
 // -----------------------------------------------------------------------------------------
-// |  TAB    |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |   BSPC    |
+// |  TAB    |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |  QWERTY   |
 // | CT(ESC) |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |     '     |
 // | SHFT    |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | SHFT(ENT) |
-//                       | GUI | ALT | BSPC|   |LWR(SPC)|RSE|MOUSE|
+//                       | GUI | ALT | BSPC|   |LWR(SPC)|RSE|     |
                         bindings = <
-   &kp TAB       &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp O   &kp SEMI &tog COLEMAK
+   &kp TAB       &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &tog COLEMAK
    &mt LCTRL ESC &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT     &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &mt RSHIFT RET
                        &kp LGUI &kp LALT &kp BSPC &lt LOWER SPACE &mo RAISE &trans
@@ -66,14 +66,14 @@
                         display-name = "Raise";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | CTRL |     |     |  :  |  "  |     |   |  `  |  -  |  =  |  [  |  ]  |  \   |
+// | SHFT |     |     |     |     |     |   |  ~  |  _  |  +  |  {  |  }  | "|"  |
 //                    | GUI | ALT | BSPC|   |LWR(SPC)|RSE|MOUSE|
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp  TAB  &kp EXCL &kp AT &kp HASH  &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &trans   &trans &kp COLON &kp DQT  &trans      &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH
+   &kp LSHFT &trans   &trans &trans    &trans   &trans      &kp TILDE &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE
+                             &kp LGUI  &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
         };
