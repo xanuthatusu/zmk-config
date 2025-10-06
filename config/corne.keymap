@@ -27,8 +27,8 @@
                         bindings = <
    &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &tog COLEMAK
    &lt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                       &kp LGUI &kp LALT &kp BSPC &lt LOWER RET &mo RAISE &trans
+   &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &lt RSHFT RET
+                       &kp LGUI &kp LALT &kp BSPC &lt LOWER SPACE &mo RAISE &trans
                         >;
                 };
 
@@ -40,10 +40,10 @@
 // | SHFT    |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | SHFT(ENT) |
 //                       | GUI | ALT | BSPC|   |LWR(SPC)|RSE|MOUSE|
                         bindings = <
-   &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &tog COLEMAK
-   &lt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                       &kp LGUI &kp LALT &kp BSPC &lt LOWER RET &mo RAISE &trans
+   &kp TAB       &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp O   &kp SEMI &tog COLEMAK
+   &lt LCTRL ESC &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
+   &kp LSHFT     &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &lt RSHIFT RET
+                       &kp LGUI &kp LALT &kp BSPC &lt LOWER SPACE &mo RAISE &trans
                         >;
                 };
 
